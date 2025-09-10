@@ -25,6 +25,7 @@ def price_reverse_convertible_multi(S0, barriers, r, sigmas, corr, T, N_paths, d
     Returns: price if compute_delta=False, else (price, deltas)
     """
     n_assets = len(S0)
+    print(n_assets)
     corr_matrix = np.array(corr)
     L = np.linalg.cholesky(corr_matrix)  # For correlated normals
 
@@ -93,22 +94,3 @@ def price_reverse_convertible_multi(S0, barriers, r, sigmas, corr, T, N_paths, d
         deltas[j] = (price_up - price_down) / (2 * dS)
 
     return price, deltas
-
-
-# Exemple d'utilisation pour 4 underlyings
-S0 = np.array([100.0, 100.0, 70.0, 100.0])
-barriers = np.array([60.0, 60.0, 60.0, 60.0])
-r = 0.01
-sigmas = np.array([0.2, 0.25, 0.18, 0.22])
-corr = [
-    [1.0, 0.5, 0.5, 0.5],
-    [0.5, 1.0, 0.5, 0.5],
-    [0.5, 0.5, 1.0, 0.5],
-    [0.5, 0.5, 0.5, 1.0]
-]
-T = 0.75
-N_paths = 100000
-
-price, deltas = price_reverse_convertible_multi(S0, barriers, r, sigmas, corr, T, N_paths, compute_delta=True)
-print(f"Prix estimé : {price:.2f}")
-print(f"Deltas : {deltas}")

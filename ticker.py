@@ -1,0 +1,22 @@
+# No better solution found / SMI component and index not in yahoo finance - why do people hate Switzerland?
+
+swstocks={'ABBN.SW':'ABBN SW',
+    'ALC.SW':'ALC SW',
+    'GEBN.SW':'GEBNSW',
+    'AMRZ.SW':'AMRZSW',
+    'GIVN.SW':'GIVNSW',
+    'HOLN.SW':'HOLNSW',
+    'KNIN.SW':'KNINSW',
+    'LOGN.SW':'LOGNSW',
+    'LONN.SW':'LONNSW',
+    'NESN.SW':'NESNSW',
+    'NOVN.SW':'NOVNSW',
+    'PGHN.SW':'PGHNSW',
+    'CFR.SW':'CFRSW',
+    'ROG.SW':'ROGSW',
+    'SIKA.SW':'SIKASW',
+    'SOON.SW':'SOONSW',
+    'SLHN.SW':'SLHNSW',
+    'SCMN.SW':'SCMNSW',
+    'UBSG.SW':'UBSGSW',
+    'ZURN.SW':'ZURNSW'}

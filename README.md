@@ -7,3 +7,5 @@ app analyse the risks :
 5. credit risk : either credit defaut swap (wors case bond spread to treasury)
 
 App is runned localy (avoidimg any data issue) although done in Python3, product will be be an exec file (focus on Mac).
+
+Focus is on Swiss Stocks - Also focus on swiss market provider
